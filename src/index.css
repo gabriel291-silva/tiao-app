@@ -7,7 +7,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url(https://firebasestorage.googleapis.com/v0/b/tiao-app.appspot.com/o/background.png?alt=media&token=7f9e93af-d03c-4851-92a4-d7e50de2c2bb);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100%;
+  height: 100%;
 }
 
 code {
