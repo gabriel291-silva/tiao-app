@@ -10,10 +10,13 @@
 }
 .name-album{
   text-align: initial;
+  margin-right: 24px;
+  text-transform: uppercase;
 }
 .tracks-contents{
   display: grid;
-  grid-template-columns: 10% 10% 80%;
+  grid-template-columns: 10% 10% 70% 10%;
+  border-bottom: solid #fff 1px;
 }
 .track-duration-contents{
   text-align: end;
@@ -33,4 +36,11 @@
   border-radius: 30px;
   color: #fff;
   font-size: 16px;
+}
+.title-album-contents{
+  display: flex;
+  align-items: center;
+}
+.tracks-contents:hover{
+  border: solid #fff 1px;
 }

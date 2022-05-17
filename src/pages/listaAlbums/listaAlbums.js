@@ -1,4 +1,6 @@
 import react from "react";
+import ButtonDeleteAlbum from "../../components/ButtonDeleteAlbum/ButtonDeleteAlbum";
+import ButtonDeleteTrack from "../../components/ButtonDeleteTrack/ButtonDeleteTrack";
 import "./listaAlbums.css"
 function ListaAlbums() {
   const [album,setAlbum] = react.useState([])
@@ -24,6 +26,7 @@ console.log(album)
         .then(response => response.json())
           .then(data => setAlbum(data.data));
     }
+    
 
     return (
       <div className="lista-albums">
@@ -33,10 +36,14 @@ console.log(album)
         </div>
 
 <div className="lists">
+  <h1> albums</h1>
 { album ?
          album.map((album)=>
           <div className="card-album-contents" key={album.id}>
-            <h1 className="name-album">{album.name}</h1>
+            <div className="title-album-contents">
+            <h1 className="name-album"> ID:{album.id} - {album.name}</h1>
+            <ButtonDeleteAlbum onClick={Search} IdAlbum={album.id} ></ButtonDeleteAlbum>
+            </div>
               {album.tracks.map((track)=>
                 <div className="tracks-contents" key={track.number}>
                   <div className="track-number-contents">
@@ -47,9 +54,14 @@ console.log(album)
                     <p>Name</p>
                       <p className="track-name">{track.title}</p>
                   </div>
+                
                   <div className="track-duration-contents">
                     <p>Duração</p>
                       <p className="track-duratiion">{track.duration}</p>
+                  </div>
+                  <div className="track-delete-contents">
+                  <p>Deletar</p>
+                    <ButtonDeleteTrack IdTrack={track.id}/>
                   </div>
                   
                 </div> 

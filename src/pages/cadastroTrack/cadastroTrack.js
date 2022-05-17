@@ -21,12 +21,12 @@ function CadastroTrack() {
       }})
       .then((response) => response.json())
       .then((json) => console.log(json));
-  
+      window.location.href = "/albuns"
   }
     return (
       <div className="cadastro-track">
         <div className="title">
-          <p>cadastrar track</p>
+          <h1>cadastrar track</h1>
 
         </div>
         <p className="label">album id</p>

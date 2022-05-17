@@ -17,18 +17,23 @@ function CadastroAlbum() {
       }})
       .then((response) => response.json())
       .then((json) => console.log(json));
-  
+function mudarpage(){
+  window.location.href = "/albuns"
+}
+  setTimeout({
+    mudarpage
+  },2000)
   }
 
 
     return (
       <div className="cadastro-album">
           <div className="title">
-            <p>cadastrar track</p>
+            <h1>cadastrar Album</h1>
           </div>
-          <p className="label" >name</p>
+          <p className="label" >digite o nome do album</p>
             <input className="input"   onChange={(e)=> setTitleAlbum(e.target.value)} />
-          <p className="label">ano</p>
+          <p className="label">digite o ano do album </p>
             <input className="input"  onChange={(e)=> setAnoAlbum(e.target.value)} />
 
         <button className="button" onClick={cadastrar_album}>cadastrar album</button>

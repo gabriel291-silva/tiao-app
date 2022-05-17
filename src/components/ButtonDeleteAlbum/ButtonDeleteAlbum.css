@@ -1,0 +1,9 @@
+.button-delete-album{
+  background: red;
+  border: none;
+  color: #fff;
+  height: 32px;
+  width: 64px;
+  font-size: 16px;
+  font-family: cursive;
+}
