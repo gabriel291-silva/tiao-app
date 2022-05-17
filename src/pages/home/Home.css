@@ -1,0 +1,31 @@
+.home{
+    min-height: 500px;
+    width: 100%;
+    background-color: rgba(1000,1000,1000,0.5);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 36px 0 0px 0px;
+}
+.logo{
+    width: 200px;
+    height: auto;
+}
+.cards{
+    padding-top: 10px;
+}
+.text-card{
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    font-style: italic;
+    color: black;
+}
+.link-card{
+    text-decoration: none;
+}
+
+.link-card:hover {
+border: solid black  1px;    
+}

@@ -1,0 +1,36 @@
+.lista-albums{
+  min-height: 500px;
+  width: 100%;
+  background-color: rgba(1000,1000,1000,0.5);
+  padding: 36px 0 0px 0px;
+
+}
+.card-album-contents{
+  padding: 0 18px 0 18px;
+}
+.name-album{
+  text-align: initial;
+}
+.tracks-contents{
+  display: grid;
+  grid-template-columns: 10% 10% 80%;
+}
+.track-duration-contents{
+  text-align: end;
+} 
+.input-search{
+  border: none;
+    height: 30px;
+    width: 70%;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+.button-search{
+  height: 30px;
+  border: none;
+  width: 100px;
+  background: lightskyblue;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 16px;
+}
