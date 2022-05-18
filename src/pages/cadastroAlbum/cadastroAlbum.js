@@ -17,7 +17,8 @@ function CadastroAlbum() {
       }})
       .then((response) => response.json())
       .then((json) => console.log(json));
-
+      alert("album cadastrada!!");
+      window.location.href = "/albuns"
   }
 
 

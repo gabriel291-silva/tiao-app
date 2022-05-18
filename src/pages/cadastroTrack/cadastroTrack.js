@@ -22,6 +22,8 @@ import "./cadastroTrack.css"
           }})
           .then((response) => response.json())
           .then((json) => console.log(json));
+          alert("track cadastrada!!");
+          window.location.href = "/albuns"
       }
       return (
           <div className="cadastro-track">
