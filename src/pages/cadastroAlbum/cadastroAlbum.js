@@ -17,12 +17,7 @@ function CadastroAlbum() {
       }})
       .then((response) => response.json())
       .then((json) => console.log(json));
-function mudarpage(){
-  window.location.href = "/albuns"
-}
-  setTimeout({
-    mudarpage
-  },2000)
+
   }
 
 

@@ -36,6 +36,7 @@
   border-radius: 30px;
   color: #fff;
   font-size: 16px;
+  cursor: pointer;
 }
 .title-album-contents{
   display: flex;
@@ -43,4 +44,19 @@
 }
 .tracks-contents:hover{
   border: solid #fff 1px;
+}
+@media (max-width: 600px){
+  .search{
+    display: flex;
+  }
+
+  .name-album{
+    font-size: 12px;
+  }
+  .tracks-contents:hover{
+    background-color: rgba(100,100,100,0.5);
+  }
+  .tracks-contents {
+    grid-template-columns: 20% 30% 24% 32%;
+}
 }

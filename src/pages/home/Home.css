@@ -29,3 +29,16 @@
 .link-card:hover {
 border: solid black  1px;    
 }
+@media (max-width: 600px){
+    .logo{
+        height: 100px;
+        width: 100px;
+    }
+    .home{
+        display: flex;
+        flex-direction: column;
+    }
+    .text-card{
+        font-size: 16px;
+    }
+}
